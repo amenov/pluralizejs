@@ -31,10 +31,10 @@ console.log(result) // 3 яблок
 const pluralize = require('pluralizejs')
 
 let words = ['корова', 'коровы', 'коров'] // здесь может быть любое существительное в трех видах (машина, машины, машин) и т.д
-let number = 3; // Представим, что это число приходит нам с API
+let number = 2; // Представим, что это число приходит нам с API
 let concat = false // Вернет только склоненное слово без конкатенации с числом
 
 let result = pluralize(number, words, concat)
 
-console.log(result) // яблок
+console.log(result) // коровы
 ```
