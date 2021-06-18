@@ -24,8 +24,17 @@ let result = pluralize(number, words, concat)
 
 console.log(result) // 3 яблок
 
-concat = false
+```
 
-console.log(pluralize(number, word, concat)) // яблок
+Можно также возвращать только склоненное слово без числа:  
+```javascript
+const pluralize = require('pluralizejs')
 
+let words = ['яблоко', 'яблока', 'яблок'] // здесь может быть любое существительное в трех видах (машина, машины, машин) и т.д
+let number = 3; // Представим, что это число приходит нам с API
+let concat = false // Вернет только склоненное слово без конкатенации с числом
+
+let result = pluralize(number, words, concat)
+
+console.log(result) // яблок
 ```
